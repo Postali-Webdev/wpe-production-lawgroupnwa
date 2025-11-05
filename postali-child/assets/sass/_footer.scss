@@ -1,0 +1,163 @@
+/**
+ * Footer Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+footer {
+    font-family: $montserrat;
+    background: $blk;
+    .footer {
+        background: $blk;
+        width: 100%;
+        padding: 60px 0 0;
+        @media screen and (max-width: $screen-lg) {
+            padding: 60px 30px;
+        }
+        & > .columns {
+            align-items: flex-start !important;
+        }
+        .contact-holder {
+            display: block;
+            .icon-pin {
+                display: inline-block;
+                &::before {
+                    font-family: $icomoon;
+                    color: $green;
+                    content: '\e918';
+                    font-size: 16px;
+                }
+            }
+            .address {
+                display: inline-block;
+                &:hover {
+                    color: $green !important;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .social.contact-holder {
+            padding: 0 2px;
+            display: inline-block;
+            margin: 0 auto;
+            text-align: center;
+            a {
+                text-decoration: none;
+            }
+            .icon {
+                &::before {
+                    font-family: $icomoon;
+                    background: $green;
+                    color: $white;
+                    display: inline-block;
+                    border-radius: 50%;
+                    padding: 5px;
+                    font-size: 20px;
+                }
+                &.icon-facebook {
+                    &::before {
+                        content: '\ea90';
+                    }
+                }
+                &.icon-twitter {
+                    &::before {
+                        content: '\ea96';
+                    }
+                }
+                &.icon-linkedin {
+                    &::before {
+                        content: '\eaca';
+                    }
+                }
+                &.icon-instagram {
+                    &::before {
+                        content: '\ea92';
+                    }
+                }
+            }
+        }
+        #menu-footer-menu.menu {
+            text-align: left;
+            margin-top: 0;
+            @media screen and (max-width: $screen-sm) {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            li {
+                &:before {
+                    display: none;
+                }
+                &.current_page_item {
+                    a {
+                        color: $green !important;
+                    }
+                }
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }           
+        }
+        .logo {
+            img {
+                filter: brightness(0) invert(1);
+                width: 225px;
+                height: auto;
+                margin: 0 auto 25px auto;
+            }
+        }
+        .contact-holder {
+            .address {
+                color: $white;
+                margin-bottom: 25px;
+            }
+            .iframe-container {
+                iframe {
+                    width: 100%;
+                    height: 100px;
+                    @media screen and (max-width: $screen-sm) {
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        .licensed-states {
+            p {
+                color: $white;
+                text-align: center;
+                font-size: 14px;
+                &:first-of-type {
+                    margin-bottom: 0;
+                }
+                &:last-of-type {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .to-top-btn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        text-decoration: none !important;
+        .icon-page-up-icon {
+            background: $green;
+            color: $white;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    }
+}
+
+a.mtsnb-hide {
+    @media screen and (max-width: $screen-xs) {
+        width: 30px;
+        height: 30px;
+        right: 0;
+        span {
+            font-size: 40px;
+        }
+    }
+}

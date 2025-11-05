@@ -1,0 +1,1699 @@
+/**
+ * Page Template Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+*/
+
+/** fixes for ALL new pages **/
+.page-template-homepage-new,
+.page-template-page-new,
+.page-template-page-interior {
+    header .container {
+        width: 1260px !important;
+        padding-left: 0;
+        padding-right: 0;
+        @media screen and (max-width: 1024px) {
+            width:90% !important
+          }
+        
+    }
+}
+
+.page-template-homepage-new {
+    .wraper_header_bannerinner,
+    .wraper_header_breadcrumb {
+        display:none;
+    }
+    .entry-header {
+        display:none;
+    }
+}
+
+/* default content panel */
+.updated {
+    ul.two-column {
+        -moz-column-count: 2;
+        column-count: 2;
+        li {
+            line-height:175% !important;
+            margin-bottom:0 !important;
+            &::before {
+                line-height: 225% !important;
+            }
+        }
+    }
+    ul.wrapped li {
+        line-height:140% !important;
+    }
+    strong {
+        font-weight:bold;
+    }
+    .wpcf7-form {
+        border: 1px solid #cecece;
+        padding: 10px 10px 0 10px;
+        background:#fff;
+        input[type="submit"] {
+            background: #4e9026 !important;
+            border: none;
+            padding: 7px 20px;
+            color: #fff !important;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            margin: 0 auto;
+        }
+    }
+    .wpcf7-form-control-wrap.your-name {
+        width: 49% !important;
+        position: relative;
+        display: inline-block;
+        margin-right: 1%;
+        text-align:left;
+        float:left;
+        margin-bottom:10px;
+        input {
+            width:100%;
+            padding: 5px 10px;
+            border:1px solid #cecece;
+            background-color:#f8f8f8;
+        }
+    }
+    .wpcf7-form-control-wrap.your-phone {
+        width: 49% !important;
+        position: relative;
+        display: inline-block;
+        margin-left: 1%;
+        text-align:left;
+        float:left;
+        margin-bottom:10px;
+        input {
+            width:100%;
+            padding: 5px 10px;
+            border:1px solid #cecece;
+            background-color:#f8f8f8;
+        }
+    }
+    .wpcf7-form-control-wrap.your-email {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        float: left;
+        margin-bottom: 10px;
+        input {
+            width:100%;
+            padding: 5px 10px;
+            border:1px solid #cecece;
+            background-color:#f8f8f8;
+        }
+    }
+    .wpcf7-form-control-wrap.your-message {
+        width: 100%;
+        max-height: 200px !important;
+        textarea {
+            width: 100%;
+            height: 145px;
+            border: 1px solid #cecece;
+            padding: 5px 10px;
+            background-color:#f8f8f8;
+        }
+    }
+    .textpanel {
+        ul li {
+            padding: 0;
+            margin: 0;
+            line-height: 100%;
+            @media screen and (max-width: 480px) {
+                line-height:140%;
+              }
+            &:before {
+                top: 4px !important;
+                color: #4e9026 !important;
+                line-height: 100%;
+                font-weight: bold !important;
+                font-size: 10px !important
+            }
+            
+        }
+        i {
+            color: #4e9026;
+            font-size: 100px;
+            display: inline-block;
+            float: left;
+        }
+        img.icon {
+            display: inline-block;
+            width: auto;
+            float: left;
+        }
+        p.icon {
+            display: inline-block;
+            float: left;
+            width: 75%;
+            padding-left: 5%;
+            margin-top: -15px;
+            strong {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        p.highlight {
+            color:#4e9026;
+            font-size:24px;
+            font-weight:bold;
+            font-family: Montserrat, sans-serif;
+            line-height: 125%;
+            margin-bottom: 34px !important;
+            &.centered {
+                text-align:center;
+            }
+        }
+        p.bottommargin {
+            margin-bottom:0 !important;
+        }
+        hr {
+            border:none;
+            border-bottom:1px solid #ededed;
+            display:block;
+            margin:40px 0 60px 0;
+            @media screen and (max-width: 768px) {
+                display:none;
+              }
+        }
+        &.gray {
+            background-color:#f8f8f8;
+        }
+        .container_inner {
+            width:1260px;
+            margin:0 auto;
+            @media screen and (max-width: 1024px) {
+                width:90% !important
+              }
+        }
+        width:100%;
+        display:block;
+        position:relative;
+        padding:60px 0 40px;
+        .two_column {
+            display: flex;
+            @media screen and (max-width: 768px) {
+                display:block;
+              }
+            .column1 {
+                width: 50%;
+                padding-right: 2%;
+                display: inline-block;
+                @media screen and (max-width: 768px) {
+                    width:100%;
+                    padding-right:0;
+                  }
+            }
+            .column2 {
+                width: 50%;
+                padding-left: 2%;
+                display: inline-block;
+                @media screen and (max-width: 768px) {
+                    width:100%;
+                    padding-left:0;
+                  }
+            }
+            &.thin {
+                width:60%;
+                maargin:0 auto;
+            }
+        }
+        h1,
+        .pre-headline {
+            font-size: 21px;
+            text-align: center !important;
+            color: #4e9026;
+            font-family: Montserrat, sans-serif;
+            text-transform: uppercase;
+            font-weight:bold !important;
+            padding: 0;
+            margin: 0 auto 10px;
+            line-height: 100%;
+            position:relative;
+            &:before {
+                position: absolute;
+                top: 10px;
+                left: 200px;
+                border-bottom: 2px solid #4e9026;
+                content: "";
+                width: 100px;
+                @media screen and (max-width: 1024px) {
+                    display:none;
+                  }
+            }
+            &:after {
+                position: absolute;
+                top: 10px;
+                right: 200px;
+                border-bottom: 2px solid #4e9026;
+                content: "";
+                width: 100px;
+                @media screen and (max-width: 1024px) {
+                    display:none;
+                  }
+            }
+        }
+        h2 {
+            text-align: center;
+            line-height:100%;
+            margin-bottom:40px;
+            @media screen and (max-width: 1024px) {
+                font-size:38px;
+              }
+        }
+        h3 {
+            color: #4e9026;
+            margin: 0 0 5px;
+            line-height: 100%;
+            font-size:32px;
+        }
+        h4 {
+            line-height:130%;
+        }
+        &.practiceAreas {
+            p.intro {
+                width:83%;
+                text-align:center;
+                margin:0 auto;
+                @media screen and (max-width: 480px) {
+                    width:100%;
+                    margin-bottom:50px !important;
+                  }
+            }
+            img {
+                width: 100%;
+                margin-bottom: -26px;
+                @media screen and (max-width: 480px) {
+                    margin-bottom:0;
+                  }
+            }
+            .vc_tta-container {
+                margin-bottom: 50px !important;
+                @media screen and (max-width: 480px) {
+                    margin-bottom:20px !important;
+                  }
+                h4 a {
+                    padding: 20px 0 20px 20px !important;
+                }
+            }
+            .homepage-promobox {
+                width: 100%;
+                height: 344px;
+                background: #272727;
+                box-sizing: border-box;
+                padding: 5%;
+                position:relative;
+                .title {
+                    color: white;
+                    font-family: Montserrat, sans-serif;
+                    font-size: 24px;
+                    font-weight: bold;
+                    display: block;
+                    margin-bottom: 30px;
+                }
+                .button {
+                    color: #fff;
+                    background: #5f9e32;
+                    padding: 8px 17px;
+                    border-radius: 5px;
+                    position: absolute;
+                    bottom: 10% !important;
+                }
+                p {
+                    color:#fff;
+                }
+            }
+        }
+        &.whyChoose {
+            background-image:url(/wp-content/uploads/2019/01/bg-whyChooseUs.jpg);
+            background-size:cover;
+            background-position:center center;
+            text-align:center;
+            padding: 60px 0;
+            h2, p {
+                color:#fff;
+            }
+            p.quote {
+                font-style: italic;
+                font-size:21px;
+                width: 83%;
+                margin:0 auto;
+            }
+            img {
+                display:inline-block;
+                margin:0 15px;
+            }
+            hr {
+                width: 50%;
+                margin:45px auto;
+                opacity:.5;
+            }
+        }
+        &.attorneyBios {
+            background-color:#f8f8f8;
+            text-align: center;
+            .box {
+                width: 23%;
+                min-height: 400px;
+                box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+                border-bottom: 2px solid #fff;
+                border-right: 2px solid #fff;
+                margin: 1% .5% 0 0.5%;
+                background: #333;
+                overflow: hidden;
+                display: inline-block;
+                position:relative;
+                box-sizing:border-box;
+                @media screen and (max-width: 1024px) {
+                    width:32%
+                  }
+                @media screen and (max-width: 768px) {
+                    width:48%;
+                  }
+                @media screen and (max-width: 480px) {
+                    width:100%;
+                  }
+                &#kc {
+                    background:url(/wp-content/uploads/2017/07/Tucker-1.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#kristy {
+                    background:url(/wp-content/uploads/2017/07/Boehler.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#gary {
+                    background:url(/wp-content/uploads/2017/07/Gary-Weeks.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#heather {
+                    background:url(/wp-content/uploads/2017/07/Campbell.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#sheila {
+                    background:url(/wp-content/uploads/2017/07/Cole.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#jason {
+                    background:url(/wp-content/uploads/2020/06/hs-jason-boyeskie.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                }
+                &#holly {
+                    background:url(/wp-content/uploads/2021/01/holly-shattuck.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                }
+                &#matthew {
+                    background:url(/wp-content/uploads/2017/07/Benson.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#jonathan {
+                    background:url(/wp-content/uploads/2017/07/Cigainero.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#dequeshia {
+                    background:url(/wp-content/uploads/2017/07/Prude.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#hannah {
+                    background:url(/wp-content/uploads/2019/11/Hanna-scaled.jpeg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#lauren {
+                    background:url(/wp-content/uploads/2020/06/hs-lauren-yupangco.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                &#sarah {
+                    background:url(/wp-content/uploads/2021/01/headshot-sarah-catherine-copper.jpg);
+                    background-size: cover;
+                    background-position:center center;
+                }
+                
+
+            .bottomContent {
+                position:absolute;
+                height:auto;
+                width:100% !important;
+                padding:20px;
+                background:rgba(78,144,38,.95);
+                display:block;
+                z-index:1;
+                bottom:0;
+                text-align:center;
+                padding:20px;
+                box-sizing:border-box;
+                .name {
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: bold;
+                    line-height: 100%;
+                    display:block;
+                }
+                .title {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    line-height: 100%;
+                    color:#fff;
+                }
+            }
+            
+            #overlay {
+                background: rgba(0, 0, 0, 0.75);
+                text-align: left;
+                padding: 20px;
+                opacity: 0;
+                -webkit-transition: opacity 0.25s ease;
+                height: 100%;
+                width: 100%;
+                display: block;
+                color:#fff;
+                z-index:2;
+                position:absolute;
+                box-sizing:border-box;
+
+                .name-title {
+                    font-weight: bold;
+                    font-size: 24px;
+                    position:relative;
+                    line-height:100%;
+                    margin-bottom:50px;
+                    display: block;
+                    height: 120px;
+
+                    &:after {
+                        content:"";
+                        position:absolute;
+                        border:0;
+                        border-bottom: 5px solid #3a940f;
+                        width:75px;
+                        bottom: 0;
+                        left:0;
+                    }
+                }
+            &:hover {
+                opacity: 1;
+            }
+            .green-button {
+                position: absolute;
+                bottom: 5%;
+                display: inline-block;
+                padding: 7px 15px;
+                border-radius: 5px;
+                color: #fff !important;
+                background: #5f9e32;
+            }
+        }
+        }
+    }
+    &.darkgray, &.arrested {
+        background:#272727;
+        p, ul li {
+            color:#fff;
+        }
+    }
+    &.green {
+        background:#5f9e32;
+        text-align:center;
+        position:relative;
+        p, h3 {
+            color:#fff;
+        }
+        &:after {
+            content:"";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 30px 75px 0 75px;
+            border-color: #5f9e32 transparent transparent transparent;
+            left:46%;
+            bottom:-30px;
+            @media screen and (max-width: 1024px) {
+                left:42.5%;
+              }
+        }
+    }
+    &.process {
+        .three_column {
+            display:flex;
+            width:66%;
+            margin:0 17% 5px auto;
+            min-height:70px;
+            @media screen and (max-width: 1024px) {
+                width:100%;
+              }
+            @media screen and (max-width: 768px) {
+                min-height:105px;
+              }
+            
+            p {
+                display:block;
+                margin-top:5px;
+                line-height: 140%;
+            }
+            .column1 {
+                text-align:right;
+                width:44%;
+                display:inline-block;
+            }
+            .column2 {
+                text-align:center;
+                width:12%;
+                display:inline-block;
+                position:relative;
+                .circle {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #5f9e32;
+                    border-radius: 50%;
+                    border: 5px solid #5f9e32;
+                    padding: 7% 15% 9%;
+                    text-align: center;
+                    line-height: 100%;
+                    font-family: Open Sans, sans-serif;
+                    display: inline-block;
+                    @media screen and (max-width: 1024px) {
+                        padding:7% 16% 9% 15%;
+                      }
+                    @media screen and (max-width: 768px) {
+                        font-size:34px;
+                        padding: 5% 16% 9% 16%;
+                      }
+                }
+                .circle2 {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #5f9e32;
+                    border-radius: 50%;
+                    border: 5px solid #5f9e32;
+                    padding: 7% 11% 9% 6%;
+                    text-align: center;
+                    line-height: 100%;
+                    font-family: Open Sans, sans-serif;
+                    display: inline-block;
+                    letter-spacing:-.1em;
+                    @media screen and (max-width: 1024px) {
+                        padding:7% 12% 9% 7%;
+                      }
+                    @media screen and (max-width: 768px) {
+                        font-size:34px;
+                        padding: 7% 13% 9% 6%;
+                      }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 48%;
+                    bottom: -7px;
+                    height: 26%;
+                    width: 4px;
+                    background: #5f9e32;
+                    z-index: 0;
+                    @media screen and (max-width: 1024px) {
+                        left:49%;
+                      }
+                    @media screen and (max-width: 768px) {
+                        height:55%;
+                      }
+            }
+        }
+        .column2-last {
+            text-align:center;
+            width:12%;
+            display:inline-block;
+            position:relative;
+            .circle2 {
+                font-size: 35px;
+                font-weight: bold;
+                color: #5f9e32;
+                border-radius: 50%;
+                border: 5px solid #5f9e32;
+                padding: 7% 11% 9% 6%;
+                text-align: center;
+                line-height: 100%;
+                font-family: Open Sans, sans-serif;
+                display: inline-block;
+                letter-spacing:-.1em;
+            }
+        }
+            .column3 {
+                text-align:left;
+                width:44%;
+                display:inline-block;
+            }
+        }
+    }
+    &.debtCounseling {
+        background-image: url(/wp-content/uploads/2019/01/bg-debtCounseling.jpg);
+        background-size: 50%;
+        background-position: center left 100%;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+        @media screen and (max-width: 1024px) {
+            background-size: 80%;
+            background-position: center left 250%;
+          }
+        @media screen and (max-width: 768px) {
+            background-image:none;
+          }
+        .column1 {
+            padding:0 5%;
+        }
+    }
+    &.arrested {
+        background-image: url(/wp-content/uploads/2019/01/bg-pulledOver.jpg);
+        background-size: 50%;
+        background-position: center left 100%;
+        background-repeat: no-repeat;
+        background-color: #272727;
+        @media screen and (max-width: 1024px) {
+            background-size: 68%;
+            background-position: center left 157%;
+          }
+        @media screen and (max-width: 768px) {
+            background-image:none;
+          }
+        .column1 {
+            padding:0 5%;
+        }
+    }
+}
+.entry-header h1 {
+    display: none;
+}
+}
+
+/* category page styles */
+.page-template-page-new {
+    p {
+        margin-bottom:25px !important;
+    }
+    #page {
+        word-wrap: normal !important;
+    }
+    .wraper_header_bannerinner {
+        width: 100%;
+        height: auto;
+        background: center top no-repeat #444346;
+        background-size: cover;
+        padding-bottom: 80px;
+    }
+    .header_bannerinner {
+        .holder {
+            h1 {
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            background: #4e9026;
+            display: inline-block;
+            padding: 10px 21px;
+            line-height: 100%;
+            margin: 50px 0;
+            @media screen and (max-width: 480px) {
+                font-size: 16px !important;
+                line-height: 120% !important;
+                margin: -9px 0 50px 0;
+              }
+            }
+        }
+    }
+    .wraper_header_bannerinner,
+    .wraper_header_breadcrumb {
+        .container {
+            width: 1260px;
+            @media screen and (max-width: 1024px) {
+                width:90%;
+              }
+        }
+        .header-excerpt {
+            font-family: Montserrat, sans-serif;
+            width: 50%;
+            color: #fff;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 105%;
+            @media screen and (max-width: 1024px) {
+                width:65%;
+              }
+            @media screen and (max-width: 480px) {
+                width:100%;
+                font-size:28px;
+              }
+        }
+    }
+    .wraper_header_breadcrumb {
+            background:#272727;
+            .gap, .current {
+                color:#fff;
+            }
+    }
+    }
+   
+
+    /* interior third level pages */
+
+    .page-template-page-interior {
+        .widget ul.menu li {
+            display: block;
+            padding: 12px 0 12px 15px;
+            background: #4e9026;
+            width: 75%;
+            margin-bottom: 10px;
+            margin-left: 10%;
+            transition:.2s ease all;
+            @media screen and (max-width: 768px) {
+                width:90%;
+              }
+            @media screen and (max-width: 480px) {
+                width:100%;
+                margin-left:0;
+              }
+            &.current_page_item {
+                background: #f2f2f2 !important;
+                a {
+                    color:#272727 !important;
+                }
+            }
+            &:hover {
+                background:#5f9e32;
+                transition:.2s ease all;
+            }
+            a {
+                color:#fff !important;
+            }
+            &:before {
+                content:"" !important;
+            }
+        }
+        h3 {
+            margin: 30px 0 20px 0 !important;
+            font-size: 26px !important;
+        }
+    
+    .wraper_header_bannerinner h1 {
+            color:#fff !important;
+            @media screen and (max-width: 480px) {
+                font-size: 15px !important;
+                text-transform: uppercase;
+                line-height:120% !important;
+              }
+        }
+    .wraper_header_bannerinner,
+    .wraper_header_breadcrumb {
+        .container {
+            width: 1260px;
+            @media screen and (max-width: 1024px) {
+                width:90%;
+              }
+        }
+        .header-excerpt {
+            font-family: Montserrat, sans-serif;
+            width: 100%;
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 105%;
+        }
+    }
+    .wraper_header_breadcrumb {
+            background:#272727;
+            .gap, .current {
+                color:#fff;
+            }
+    }
+    .textpanel ul {
+        margin-bottom: 20px !important;
+        li {
+            line-height: 140% !important;
+            padding-left:25px;
+            position:relative;
+            &:before {
+                position: absolute;
+                top: 8px !important;
+                left: 5px;
+                z-index: 0;
+                content: "\f054";
+                font-family: "FontAwesome";
+                font-size: 9px;
+                color: #1a202d;
+                line-height: 9px;
+            }
+        }
+    }
+}
+
+/* Practice Area Parent, Child & About */
+.page-template-page-pa-parent,
+.page-template-page-pa-child,
+.page-template-page-about {
+    #panel1 {
+        @include hero-styles;
+        h1 {
+            @include small-heading;
+            text-align: left;
+        }
+        h2 {
+            @include large-heading;
+            text-align: left;
+        }
+    }
+    ul.two-column {
+        li a {
+            color: $dkgreen;
+        }
+    }
+    #related-cases-block {
+        p {
+            color: $white;
+        }
+        ul.two-column {
+            padding: 0;
+            li {
+                font-family: $montserrat;
+                display: block;
+                margin: 0;
+                position: relative;
+                @media screen and (max-width: $screen-sm) {
+                    margin-left: 15px;
+                }
+                a, span {
+                    color: $white;
+                    display: inline-block;
+                    font-weight: $normal;
+                }
+                a {
+                    text-decoration: underline;
+                    &:hover {
+                        color: $green;
+                    }
+                }
+                &::before {
+                    content: '\203A';
+                    display: inline-block;
+                    font-size: 22px;
+                    position: absolute;
+                    top: 0px;
+                    left: -20px;
+                    color: $green;
+                    font-family: $montserrat;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.page-template-page-pa-parent {
+    .gform_wrapper {
+        @include gravity-form;
+
+        padding: 15px;
+        border: 1px solid #ccc;
+        background: white;
+        border-radius: 6px;
+
+        p.gform_required_legend {
+            margin-top: -10px;
+        }
+
+        #gform_1 {
+            max-width: 100%;
+        }
+    }
+
+    #panel1 {
+        @media screen and (max-width: $screen-xs) {
+            background-size: 135%;
+            .section-overlay {
+                background: linear-gradient(0deg, #393939 60%, rgba(57,57,57,0) 100%);
+            }
+        }
+    }
+    #court-process-block {
+        .accordion-holder {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px 30px;
+            @media screen and (max-width: $screen-sm) {
+                grid-template-columns: 1fr;
+            }
+            .accordion {
+                &_title {
+                    background: $white;
+                    display: grid;
+                    grid-template-columns: 90% 10%;
+                    align-items: center;
+                    padding: 20px 15px;
+                    .title {
+                        font-family: $montserrat;
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: bold;
+                        text-align: left;
+                        &:hover {
+                            color: $green;
+                            cursor: pointer;
+                        }
+                    }
+                    .plus {
+                        &::after {
+                            content: '+';
+                            color: $blk;
+                            display: block;
+                            transition: $trans;
+                            font-size: 24px;
+                            font-family: $montserrat;
+                            line-height: 1;
+                            font-weight: bold;
+                            position: relative;
+                            top: -3px;
+                            &:hover {
+                                color: $green;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    &.active {
+                        .plus {
+                            &::after {
+                                transform: rotate(180deg);
+                                transition: $trans;
+                            }
+                        }
+                    }
+                }
+                &_content {
+                    display: none;
+                    padding: 0 15px;
+                    p {
+                        text-align: left;
+                    }                        
+                }
+            }
+        }
+    }
+}
+
+/* Fix spaceing for pages w/o related cases block*/
+.page-id-2241, .page-id-2726, .page-id-2644, .page-id-2754, .page-id-2752, .page-id-2774 {
+    #panel3, #panel4 {
+        padding-bottom: 0;
+    }
+}
+
+.page-id-2645 {
+    #panel3 {
+        padding-bottom: 0;
+    }
+}
+
+
+.page-template-page-about {
+    .gform_wrapper {
+        @include gravity-form;
+
+        padding: 15px;
+        border: 1px solid #ccc;
+        background: white;
+        border-radius: 6px;
+
+        p.gform_required_legend {
+            margin-top: -10px;
+        }
+
+        #gform_1 {
+            max-width: 100%;
+        }
+    }
+    
+    .attorneyBios {
+        font-family: $montserrat;
+        background-color:#f8f8f8;
+        text-align: center;
+        .box {
+            width: 23%;
+            min-height: 400px;
+            box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            margin: 1% .5% 0 0.5%;
+            background: #333;
+            overflow: hidden;
+            display: inline-block;
+            position:relative;
+            box-sizing:border-box;
+            background-size: cover;
+            background-position:center center;
+            @media screen and (max-width: 1024px) {
+                width:32%
+                }
+            @media screen and (max-width: 768px) {
+                width:48%;
+                }
+            @media screen and (max-width: 480px) {
+                width:100%;
+                }
+            /*&#kc {
+                background:url(/wp-content/uploads/2017/07/Tucker-1.jpg);
+                
+            }
+            &#kristy {
+                background:url(/wp-content/uploads/2017/07/Boehler.jpg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#gary {
+                background:url(/wp-content/uploads/2017/07/Gary-Weeks.jpg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#heather {
+                background:url(/wp-content/uploads/2017/07/Campbell.jpg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#sheila {
+                background:url(/wp-content/uploads/2017/07/Cole.jpg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#jason {
+                background:url(/wp-content/uploads/2020/06/hs-jason-boyeskie.jpg);
+                background-size: cover;
+                background-position: center center;
+            }
+            &#holly {
+                background:url(/wp-content/uploads/2021/01/holly-shattuck.jpg);
+                background-size: cover;
+                background-position: center center;
+            }
+            &#matthew {
+                background:url(/wp-content/uploads/2017/07/Benson.jpg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#jonathan {
+                background:url(/wp-content/uploads/2017/07/Cigainero.jpg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#dequeshia {
+                background:url(/wp-content/uploads/2017/07/Prude.jpg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#hannah {
+                background:url(/wp-content/uploads/2019/11/Hanna-scaled.jpeg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#lauren {
+                background:url(/wp-content/uploads/2020/06/hs-lauren-yupangco.jpg);
+                background-size: cover;
+                background-position:center center;
+            }
+            &#sarah {
+                background:url(/wp-content/uploads/2021/01/headshot-sarah-catherine-copper.jpg);
+                background-size: cover;
+                background-position:center center;
+            }*/
+            .bottomContent {
+                position:absolute;
+                height:auto;
+                width:100% !important;
+                padding:20px;
+                background:rgba(78,144,38,.95);
+                display:block;
+                z-index:0;
+                bottom:0;
+                text-align:center;
+                padding:20px;
+                box-sizing:border-box;
+                .name {
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: bold;
+                    line-height: 100%;
+                    display:block;
+                }
+                .title {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    line-height: 100%;
+                    color:#fff;
+                }
+            }
+            #overlay {
+                background: rgba(0, 0, 0, 0.75);
+                text-align: left;
+                padding: 20px;
+                opacity: 0;
+                -webkit-transition: opacity 0.25s ease;
+                height: 100%;
+                width: 100%;
+                display: block;
+                color:#fff;
+                z-index:1;
+                position:absolute;
+                box-sizing:border-box;
+
+                .name-title {
+                    font-weight: bold;
+                    font-size: 24px;
+                    position:relative;
+                    line-height:100%;
+                    margin-bottom:50px;
+                    display: block;
+                    height: 120px;
+
+                    &:after {
+                        content:"";
+                        position:absolute;
+                        border:0;
+                        border-bottom: 5px solid #3a940f;
+                        width:75px;
+                        bottom: 0;
+                        left:0;
+                    }
+                }
+
+                .bio-details {
+                    p {
+                        color: $white;
+                        position: absolute;
+                        top: 35%;
+                        a {
+                            color: $green;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    opacity: 1;
+                }
+                .green-button {
+                    position: absolute;
+                    bottom: 5%;
+                    display: inline-block;
+                    padding: 7px 15px;
+                    border-radius: 5px;
+                    color: #fff !important;
+                    background: #5f9e32;
+                    left: 0;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* Interior, Sitemap, 404, Searchpage */
+.page-template-page-interior,
+.page-template-sitemap,
+.error404,
+.search {
+    #panel1 {
+        @include hero-styles;
+        .section-overlay {
+            padding: 45px 0;
+        }
+        #breadcrumbs {
+            padding: 0 0 30px;
+        }
+        h1 {
+            @include medium-heading;
+            text-align: left;
+            padding: 0;
+            color: $white;
+            line-height: 1;
+        }
+        h2 {
+            @include small-heading;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            color: $white;
+            font-size: 28px;
+            line-height: 1;
+        }
+    }
+    .numbers {
+        @include large-heading;
+        color: $green;
+        font-size: 124px;
+    }
+}
+
+.page-template-sitemap {
+    h3 {
+        text-align: left !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+/* Single Blog Post */
+.single, .single-espanolblogs {
+    .post-meta {
+        font-family: $montserrat;
+        .author {
+            margin-top: 15px;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    h1 {
+        @include large-heading;
+    }
+    h2 {
+        @include medium-heading;
+        padding: 15px 0 0;
+    }
+    h1, h2 {
+        text-align: left !important;
+        color: $blk;
+        text-transform: capitalize;
+    }
+    #panel1 {
+        @include hero-styles;
+        .section-overlay {
+            padding: 45px 0;
+        }
+        #breadcrumbs {
+            padding: 0 0 30px;
+        }
+        h2 {
+            @include medium-heading;
+            text-align: left;
+            padding: 0;
+            color: $white;
+            line-height: 1;
+        }
+    }
+    #panel2 {
+        @include hero-styles;
+        .section-overlay {
+            padding: 45px 0;
+        }
+        #breadcrumbs {
+            padding: 0 0 30px;
+        }
+        h1 {
+            @media screen and (max-width: $screen-sm) {
+                font-size: 32px;
+            }
+        }
+        h2 {
+            @include medium-heading;
+            text-align: left;
+            padding: 0;
+            line-height: 1;
+            @media screen and (max-width: $screen-sm) {
+                font-size: 30px;
+            }
+        }
+    }
+
+}
+
+/* Contact Page */
+.page-template-page-contact {
+
+    @include gravity-form;
+
+    #panel1 {
+        @include hero-styles;
+        .section-overlay {
+            padding: 45px 0;
+        }
+        #breadcrumbs {
+            padding: 0 0 30px;
+        }
+        h1 {
+            @include medium-heading;
+            text-align: left;
+            padding: 0;
+            color: $white;
+            line-height: 1;
+        }
+        h2 {
+            @include small-heading;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            color: $white;
+            font-size: 28px;
+            line-height: 1;
+        }
+    }
+    #panel2 {
+        padding-top: 0;
+        .container {
+            max-width: 100%;
+            padding: 0;
+            .contact-holder {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                @media screen and (max-width: $screen-lg-md) {
+                    grid-template-columns: 1fr 1fr;
+                }
+                @media screen and (max-width: $screen-sm) {
+                    grid-template-columns: 1fr;
+                }
+                .contact {
+                    border-bottom: 1px solid $dkgrey;
+                    border-right: 1px solid $dkgrey;
+                    width: 100%;
+                    min-height: 260px;
+                    height: 260px;
+                    padding: 20% 30px 18%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &:last-of-type {
+                        border-right: none;
+                    }
+                    @media screen and (max-width: $screen-lg-md) {
+                        border-top: none;
+                        border-bottom: none;
+                    }
+                    @media screen and (max-width: $screen-sm) {
+                        padding: 30px;
+                        min-height: revert;
+                    }
+                    &_icon {
+                        &::before {
+                            font-family: $icomoon;
+                            color: $blk;
+                            font-size: 24px;
+                            display: block;
+                            margin: 0 auto;
+                            text-align: center;
+                        }
+                        &#address {
+                            &::before {
+                                content: '\e949';
+                            }
+                        }
+                        &#phone {
+                            &::before {
+                                content: '\e91d';
+                            }
+                        }
+                        &#email {
+                            &::before {
+                                content: '\e90d';
+                                font-size: 27px;
+                            }
+                        }
+                        &#hours {
+                            &::before {
+                                content: '\e94e';
+                            }
+                        }
+                    }
+                    &_title, a, .no-link {
+                        display: block;
+                        font-size:16px;
+                        line-height: 24px;
+                        margin-bottom:5px;
+                        color: $blk;
+                        font-family: $montserrat;
+                        font-weight: bold;
+                        &.double {
+                            display: inline-block;
+                            padding-right: 3px;
+                            &.label {
+                                padding-top: 10px;
+                            }
+                        }
+                    }
+                    a {
+                        color: $dkgreen;
+                        font-weight: $normal;
+                    }
+                    .no-link {
+                        font-weight: $normal;
+                    }
+                }
+            }
+        }
+    }
+    #panel4 {
+        margin-bottom: -3px;
+        padding-bottom: 0;
+        .container {
+            padding: 0;
+        }
+    }
+}
+
+/* Practice Areas */
+.page-template-page-practice-areas {
+    #panel1 {
+        @include hero-styles;
+        height: 360px;
+        @media screen and (max-width: $screen-xs) {
+            background-size: cover;
+         }
+        .section-overlay {
+            padding: 45px 0;
+            height: inherit;
+            .container {
+                padding-top: 70px;
+            }
+            @media screen and (max-width: $screen-xs) {
+                background: linear-gradient(0deg, #393939 33%, rgba(57,57,57,0) 100%);
+            }
+        }
+        #breadcrumbs {
+            padding: 0 0 30px;
+        }
+        h1 {
+            @include medium-heading;
+            text-align: left;
+            padding: 0;
+            color: $white;
+            line-height: 1;
+        }
+    }
+    #panel2 {
+        .pa-holder {
+            @include post-card;
+
+            .non-gradient-card {
+                .card {
+                    padding: 0px;
+                    height: 500px;
+                    @media screen and (max-width: $screen-xxs) {
+                        height: 620px;
+                    }
+                }
+                .card_image, .card_content {
+                    height: 50%;
+                    width: 100%;
+                }
+                .card_image {
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .card_content {
+                    background: $white;
+                    &_info {
+                        h2, p {
+                            color: $blk;
+                            text-align: left;
+                        }
+                    }
+                    a.button {
+                        margin: 0;
+                        padding: 15px 30px;
+                        text-decoration: none;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Blog */
+/* Practice Areas */
+.blog,
+.page-template-page-espanol-blog,
+.category,
+.archive,
+.search,
+.single-post,
+.single-espanolblogs {
+    #panel1 {
+        @include hero-styles;
+        &.short-hero {
+            background-image: url('/wp-content/uploads/2024/05/4-Law-Group-NWA-Blog-page-NEW-1.jpg');
+            @media screen and (max-width: $screen-sm) {
+                background-image: url('/wp-content/uploads/2024/05/4-Law-Group-NWA-Blog-page-NEW-1.jpg');
+                .section-overlay {
+                    @media screen and (max-width: $screen-sm) {
+                        background: linear-gradient(0deg, #393939 0%, rgba(57,57,57,0) 85%);
+                    }
+                }
+            }
+        }
+        .section-overlay {
+            padding: 45px 0;
+        }
+        #breadcrumbs {
+            padding: 0 0 30px;
+        }
+        h1 {
+            @include medium-heading;
+            text-align: left;
+            padding: 0;
+            color: $white;
+            line-height: 1;
+        }
+    }
+    #panel2 {
+        .interact-holder {
+            display: flex;
+            flex-direction: row;
+            @media screen and (max-width: $screen-sm) {
+                display: block;
+            }
+            .interact-box {
+                > p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .post-holder {
+            @include post-card;
+        }
+    }
+    .blog-disclaimer {
+        p {
+            &:first-of-type {
+                margin-top: 0 !important;
+            }
+            &:last-of-type {
+                margin-bottom: 30px !important;
+            }
+            font-size: 14px;
+        }
+    }
+}
+
+.single-attorneys, .single-attorneys-espanol {
+    #panel1 {
+        @include hero-styles;
+        .section-overlay {
+            padding: 45px 0;
+        }
+        #breadcrumbs {
+            padding: 0 0 30px;
+        }
+        h1 {
+            @include medium-heading;
+            text-align: left;
+            padding: 0;
+            color: $white;
+            line-height: 1;
+        }
+    }
+    #panel2 {
+        .bio {
+            &_left {
+                &_contact {
+                    padding: 15px 0;
+                    .contact-link {
+                        display: block;
+                        &_icon {
+                            display: inline-block;
+                            &::before {
+                                font-family: $icomoon;
+                                color: $blk;
+                            }
+                            &.vcard {
+                                &::before {
+                                    content: '\e944';
+                                    font-size: 16px;
+                                }
+                            }
+                            &.phone {
+                                &::before {
+                                    content: '\e91d';
+                                    font-size: 14px;
+                                }
+                            }
+                            &.email {
+                                &::before {
+                                    content: '\e90d';
+                                    font-size: 18px;
+                                    position: relative;
+                                    top: 3px;
+                                }
+                            }
+                        }
+                        a {
+                            font-size:16px;
+                            line-height: 24px;
+                            margin-bottom:15px;
+                            color: $blk;
+                            font-family: $montserrat;
+                            display: inline-block;
+                            font-weight: $normal;
+                            text-decoration: underline;
+                            &:hover {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+            &_right {
+                .bio-quote {
+                    font-family: $montserrat;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 38px;
+                    display: block;
+                    padding-bottom: 15px;
+                    color: $green;
+                    font-style: italic;
+                    text-align: right;
+                    @media screen and (max-width: $screen-sm) {
+                        text-align: left;
+                        font-size: 28px;
+                        line-height: 36px;
+                    }
+                }
+                h3 {
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: $blk;
+                }
+            }
+        }
+    }
+}
