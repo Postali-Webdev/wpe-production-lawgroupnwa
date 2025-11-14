@@ -13,6 +13,7 @@ $firm_info = is_tree(5280) || is_singular(['attorneys-espanol']) || is_singular(
         <div class="columns">
             <div class="column-33">
                 <div class="footer-menu">
+                    <nav role="navigation">
                     <?php
                     $args = array(
                         'container' => false,
@@ -27,7 +28,8 @@ $firm_info = is_tree(5280) || is_singular(['attorneys-espanol']) || is_singular(
                     }
                     
                         wp_nav_menu( $args );
-                    ?>			
+                    ?>	
+                    </nav>		
                 </div>
             </div>
             <div class="column-33">

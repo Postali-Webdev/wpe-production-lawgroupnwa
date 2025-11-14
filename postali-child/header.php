@@ -119,13 +119,15 @@ src="https://www.facebook.com/tr?id=1186342318863681&ev=PageView&noscript=1"
 			
 			<div id="header-top_right">
 				<div id="header-top_menu">
+                    <nav role="navigation">
 						<?php
 							$args = array(
 								'container' => false,
 								'theme_location' => $header_location
 							);
 							wp_nav_menu( $args );
-						?>			
+						?>		
+                    </nav>	
 					<div class="head-search"><?php get_search_form(); ?></div>
 					<div id="header-top_mobile">
 						<div id="menu-icon">
