@@ -1268,6 +1268,27 @@
         text-align: left !important;
         padding-bottom: 10px !important;
     }
+
+    .column-50 {
+        ul {
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    margin-right: 10px;
+                }
+                
+                a {
+                    width: 100%;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
 }
 
 /* Single Blog Post */
