@@ -28,17 +28,18 @@ if ( !empty($background_img) ) { ?>
 <section id="panel2">
     <div class="container">
         <div class="columns">
-            <div class="column-75 center-block">
+            <div class="column-50">
                 <h3>Pages</h3> 
                 <ul>
                     <?php wp_list_pages("title_li=" ); ?>
-                </ul> 
-                <div class="spacer-60">&nbsp;</div>
+                </ul>                 
+			</div>
+            <div class="column-50">
                 <h3>Blog Posts</h3> 
                 <ul>
                     <?php wp_get_archives('type=postbypost'); ?>
                 </ul>
-			</div>
+            </div>
         </div>
     </div>
 </section>
