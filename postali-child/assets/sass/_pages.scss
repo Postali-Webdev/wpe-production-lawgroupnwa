@@ -1271,20 +1271,21 @@
 
     .column-50 {
         ul {
+            display:block;
+
             li {
-                display: flex;
-                flex-wrap: wrap;
+                display: block;
                 width: 100%;
                 position: relative;
 
                 &::before {
                     position: absolute;
-                    margin-right: 10px;
+                    left: 0;
                 }
-                
+
                 a {
-                    width: 100%;
-                    margin-left: 20px;
+                    display: block;
+                    margin-left: 15px;
                 }
             }
         }

